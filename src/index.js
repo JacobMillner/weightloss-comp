@@ -1,21 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import View from './pages/View/index.jsx';
-import New from './pages/New/index.jsx';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import View from "./pages/View";
+import New from "./pages/New";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="new" element={<New />} />
-          <Route path="view" element={<View />} />
-        </Route>
+        <Route path="/" element={<App />} />
+        <Route path="new" element={<New />} />
+        <Route path="view" element={<View />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

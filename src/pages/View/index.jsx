@@ -1,6 +1,3 @@
-const View = () => {
-	return <>Create a new comp!</>;
-}
+const View = () => <>View an existing comp!</>;
 
 export default View;
-
