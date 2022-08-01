@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -15,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Weight loss competition</p>
         <Stack spacing={2} direction="row">
           <Button variant="outlined" onClick={handleNew}>
